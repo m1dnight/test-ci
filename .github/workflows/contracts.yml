@@ -1,0 +1,12 @@
+name: Test run
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  contracts:
+    name: Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $SHELL
